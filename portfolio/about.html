@@ -1,0 +1,92 @@
+
+        </div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sahasra-webdeveloper,programmerd</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="sidebar sidebargo">
+            <nav>
+                <ul>
+                    <li><a href="/">Home</li></a>
+                    <li><a href="/about.html">About</li></a>
+                    <li><a href="/education.html">Education</li></a>
+                    <li><a href="sahasra_resume (1).pdf">Resume</li></a>
+                    <li><a href="project.html">Projects</li></a>
+                    <li><a href="contact.html">Contact</li></a>
+                </ul>
+            </nav>
+        </div>
+        <div class="main-container">
+            <div class="hamburger">
+                <img class="ham" src="https://cdn-icons-png.flaticon.com/128/2613/2613045.png" alt="" width="24">
+                <img class="cross" src="https://tse1.mm.bing.net/th?id=OIP.cdsdHDdF2rEALFR9sLa2nwHaHa&pid=Api&P=0&h=180" width="22">
+            </div>
+            <h1>About Me</h1>
+        
+            <div class="info-container">
+                <div class="pic">
+                    <img src="http://clipart-library.com/new_gallery/18-186349_128530814-4-business-women-images-png.png" alt="">
+                </div>
+                <div class="aboutme">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolore temporibus doloribus nemo ex, inventore tenetur nisi fugit adipisci impedit? Expedita accusamus eaque, magnam minima illo ea error iste dolorum vel placeat id quaerat ipsum hic alias in. Eveniet iusto corporis placeat totam pariatur nemo ipsam inventore! Natus odio impedit ipsum nostrum mollitia in? Dolorem autem non obcaecati illo explicabo, reiciendis quisquam, fuga culpa harum iure, libero expedita sequi ut?</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills">
+                        <div class="skillitem">HTML:<div class="skill hundered"></div><div class="skillitem">100%</div></div>
+                        <div class="skillitem">CSS:<div class="skill seven5"></div><div class="skillitem">75%</div></div>
+                        <div class="skillitem">JAVASCRIPT:<div class="skill fifty"></div><div class="skillitem">50%</div></div>
+                        <div class="skillitem">C:<div class="skill fifty"></div><div class="skillitem">50%</div></div>
+                        <div class="skillitem">PYTHON:<div class="skill seven5"></div><div class="skillitem">75%</div></div> 
+                        <div class="skillitem">JAVA:<div class="skill t5"></div><div class="skillitem">25%</div></div>    
+                    </div>
+                     
+                    <div class="tab-content " id="experience">
+                        <div class="skillitem">HTML:<div class="skill hundered"></div><div class="skillitem">100%</div></div>
+                        <div class="skillitem">CSS:<div class="skill seven5"></div><div class="skillitem">75%</div></div>
+                        <div class="skillitem">JAVASCRIPT:<div class="skill fifty"></div><div class="skillitem">50%</div></div>
+                        <div class="skillitem">C:<div class="skill fifty"></div><div class="skillitem">50%</div></div>
+                        <div class="skillitem">PYTHON:<div class="skill seven5"></div><div class="skillitem">75%</div></div> 
+                        <div class="skillitem">JAVA:<div class="skill t5"></div><div class="skillitem">25%</div></div>    
+                    </div>
+                     
+                   
+                     
+                   
+                    
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+<script src="index.js">
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-content");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.ClassList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.ClassList.remove("active-tab");
+        }
+        event.currentTarget.ClassList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    opentab()
+    
+</script>
+
+</body>
+</html>
